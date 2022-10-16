@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95151A5928F0BF480076DA48 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = 95151A5828F0BF480076DA48 /* Zip */; };
 		952CD4F528EDAAC200092A1E /* unzmoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952CD4F428EDAAC200092A1E /* unzmoverApp.swift */; };
 		952CD4F728EDAAC200092A1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952CD4F628EDAAC200092A1E /* ContentView.swift */; };
 		952CD4F928EDAAC900092A1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952CD4F828EDAAC900092A1E /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95151A5628F0BEFE0076DA48 /* Zip */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Zip; path = ../Zip; sourceTree = "<group>"; };
 		952CD4F128EDAAC200092A1E /* unzmover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unzmover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		952CD4F428EDAAC200092A1E /* unzmoverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unzmoverApp.swift; sourceTree = "<group>"; };
 		952CD4F628EDAAC200092A1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,17 +29,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95151A5928F0BF480076DA48 /* Zip in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95151A5328F0BC8B0076DA48 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				95151A5628F0BEFE0076DA48 /* Zip */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		95151A5728F0BF480076DA48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		952CD4E828EDAAC200092A1E = {
 			isa = PBXGroup;
 			children = (
+				95151A5328F0BC8B0076DA48 /* Packages */,
 				952CD4F328EDAAC200092A1E /* unzmover */,
 				952CD4F228EDAAC200092A1E /* Products */,
+				95151A5728F0BF480076DA48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +105,9 @@
 			dependencies = (
 			);
 			name = unzmover;
+			packageProductDependencies = (
+				95151A5828F0BF480076DA48 /* Zip */,
+			);
 			productName = unzmover;
 			productReference = 952CD4F128EDAAC200092A1E /* unzmover.app */;
 			productType = "com.apple.product-type.application";
@@ -274,6 +297,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = UnZMover;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +326,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = UnZMover;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +363,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95151A5828F0BF480076DA48 /* Zip */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Zip;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 952CD4E928EDAAC200092A1E /* Project object */;
 }
